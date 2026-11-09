@@ -1,0 +1,47 @@
+.root {
+    flex-shrink: 0;
+    --progress-track-color: var(--progress-track, #e5e5e5);
+    --progress-fill-color: var(--progress-fill, #171717);
+}
+
+/* ---------- Pipe ---------- */
+
+.pipe {
+    width: 2rem;
+}
+
+.track {
+    height: 0.25rem;
+    overflow: hidden;
+    border-radius: 9999px;
+    background-color: var(--progress-track-color);
+}
+
+.indicator {
+    border-radius: inherit;
+    background-color: var(--progress-fill-color);
+    transition: width 100ms linear;
+}
+
+/* ---------- Ring ---------- */
+
+.ring {
+    display: block;
+    transform: rotate(-90deg);
+}
+
+.ringTrack,
+.ringIndicator {
+    fill: none;
+    stroke-width: 2;
+}
+
+.ringTrack {
+    stroke: var(--progress-track-color);
+}
+
+.ringIndicator {
+    stroke: var(--progress-fill-color);
+    stroke-linecap: round;
+    transition: stroke-dashoffset 100ms linear;
+}

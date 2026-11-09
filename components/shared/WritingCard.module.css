@@ -1,0 +1,22 @@
+.writing {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.writingMeta {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    color: var(--muted-foreground);
+}
+
+.writingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+}

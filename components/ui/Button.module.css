@@ -1,0 +1,33 @@
+.button {
+    width: fit-content;
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-lg);
+}
+
+.buttonDefault {
+    color: var(--primary-foreground);
+    background-color: var(--primary);
+}
+
+.buttonGhost {
+    color: var(--foreground);
+    background-color: transparent;
+}
+
+.buttonOutline {
+    color: var(--foreground);
+    background-color: var(--background);
+    border-color: var(--border);
+}
+
+.buttonLink {
+    padding: 0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+        color: var(--primary);
+    }
+}

@@ -1,0 +1,88 @@
+.article {
+}
+
+.articleMeta {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.articleHero {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.articleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.articleInfoRow {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    gap: 0 1.5rem;
+}
+
+.articleInfoLabel {
+}
+
+.articleInfoTools,
+.articleInfoLinks {
+    display: flex;
+    align-items: center;
+    gap: 0 1.5rem;
+}
+
+.articleInfoTools {
+    flex-wrap: wrap;
+}
+
+.articleImage {
+}
+
+.articleFrame {
+}
+
+.articleBody {
+    padding: 2rem 0;
+}
+
+.articleBodyEmpty {
+}
+
+.articleFoot {
+}
+
+.articleFootNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 1.5rem;
+}
+
+.articleFootNavPrev {
+}
+
+.articleFootNavNext {
+}
+
+.articleFootNavLabel {
+}
+
+.articleFootNavTitle {
+}
+
+@media (max-width: 640px) {
+    .articleFootNav {
+        grid-template-columns: 1fr;
+    }
+    .articleFootNav a {
+        text-align: left;
+    }
+}

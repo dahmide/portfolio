@@ -1,0 +1,26 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.aboutList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.aboutItem {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    max-width: 670px;
+
+    svg {
+        width: 1.5rem;
+        height: 1lh;
+        flex-shrink: 0;
+        color: var(--muted-foreground);
+    }
+}

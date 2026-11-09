@@ -1,0 +1,65 @@
+.page {
+    display: flex;
+    gap: 2rem;
+}
+
+.article {
+}
+
+.articleMeta {
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.articleHero {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.articleBody {
+    padding: 2rem 0;
+}
+
+.articleBodyEmpty {
+}
+
+.articleFoot {
+}
+
+.articleNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 1.5rem;
+}
+
+.articlePrev {
+}
+
+.articleNext {
+}
+
+.articleLabel {
+}
+
+.articleTitle {
+}
+
+@media (max-width: 640px) {
+    .articleNav {
+        grid-template-columns: 1fr;
+        a {
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .page {
+        gap: 3rem;
+    }
+}

@@ -1,0 +1,167 @@
+@import "./preflight.css";
+@import "./utilities.css";
+
+:root {
+    --radius: 0.625rem;
+    --header-height: 5rem;
+
+    --font-head: var(--ff-head);
+    --font-body: var(--ff-body);
+
+    --font-xs: 200;
+    --font-sm: 300;
+    --font-base: 400;
+    --font-lg: 500;
+    --font-xl: 600;
+    --font-2xl: 700;
+    --font-3xl: 800;
+    --font-4xl: 900;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+    --text-8xl: 6rem;
+    --text-9xl: 8rem;
+
+    --color-white: white;
+    --color-black: black;
+    --color-indigo: #6155f5;
+
+    --color-neutral-50: #fafafa;
+    --color-neutral-100: #f5f5f5;
+    --color-neutral-200: #e5e5e5;
+    --color-neutral-300: #d4d4d4;
+    --color-neutral-400: #a3a3a3;
+    --color-neutral-500: #737373;
+    --color-neutral-600: #525252;
+    --color-neutral-700: #404040;
+    --color-neutral-800: #262626;
+    --color-neutral-900: #171717;
+    --color-neutral-950: #0a0a0a;
+
+    --color-neutral-50: #f2f2f7;
+    --color-neutral-100: #e5e5ea;
+    --color-neutral-200: #d1d1d6;
+    --color-neutral-300: #c7c7cc;
+    --color-neutral-400: #aeaeb2;
+    --color-neutral-500: #8e8e93;
+    --color-neutral-600: #636366;
+    --color-neutral-700: #48484a;
+    --color-neutral-800: #3a3a3c;
+    --color-neutral-900: #2c2c2e;
+    --color-neutral-950: #1c1c1e;
+
+    --radius-sm: calc(var(--radius) * 0.6);
+    --radius-md: calc(var(--radius) * 0.8);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) * 1.4);
+    --radius-2xl: calc(var(--radius) * 1.8);
+    --radius-3xl: calc(var(--radius) * 2.2);
+    --radius-4xl: calc(var(--radius) * 2.6);
+
+    --background: var(--color-white);
+    --foreground: var(--color-neutral-950);
+
+    --primary: var(--color-neutral-900);
+    --primary: var(--color-indigo);
+    --primary-foreground: var(--color-neutral-50);
+
+    --support: var(--color-neutral-100);
+    --support-foreground: var(--color-neutral-900);
+
+    --surface: var(--color-white);
+    --surface-foreground: var(--color-neutral-950);
+
+    --popcorn: var(--color-neutral-100);
+    --popcorn-foreground: var(--color-neutral-900);
+
+    --popover: var(--color-white);
+    --popover-foreground: var(--color-neutral-950);
+
+    --muted: var(--color-neutral-100);
+    --muted-foreground: var(--color-neutral-500);
+
+    --input: var(--color-neutral-700);
+    --focus: var(--color-neutral-300);
+    --border: var(--color-neutral-300);
+}
+
+@layer base {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        position: relative;
+        background: var(--background);
+        color: var(--foreground);
+        font-family: var(--font-body);
+        font-size: var(--text-base);
+        line-height: 1.5;
+        font-weight: 400;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        line-height: 1.2;
+        font-family: var(--font-head);
+    }
+
+    p {
+        text-wrap: pretty;
+        color: var(--muted-foreground);
+    }
+
+    .root {
+        isolation: isolate;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    lucide {
+        width: 16px;
+        height: 16px;
+        stroke-width: 2;
+    }
+
+    lucide * {
+        vector-effect: non-scaling-stroke;
+    }
+}
+
+@layer components {
+    .hidden {
+        display: none !important;
+    }
+
+    .caption {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 550;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-faint);
+        margin-bottom: 0.35rem;
+    }
+}
